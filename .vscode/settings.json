@@ -26,5 +26,6 @@
    "editor.defaultFormatter": "HookyQR.beautify",
    "[css]": {
       "editor.defaultFormatter": "HookyQR.beautify"
-   }
+   },
+   "terminal.integrated.defaultLocation": "editor"
 }
