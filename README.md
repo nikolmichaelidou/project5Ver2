@@ -32,7 +32,9 @@ The client is:
 ## Bugs
 * Images not appearing on page 2
   * ![](/screenshots/Screenshot(132).png)
-  
+
+* Gallery issue
+  * ![](/screenshots/Screenshot_20221208_011903.png)  
 * Error within jupyter notebooks
   * ![](/screenshots/Screenshot(131).png)
   * notebook datamodeling.ipynb does seem to be able to find the file, unlike the other notebooks.
