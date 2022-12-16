@@ -14,7 +14,35 @@ def page_visualizer_body():
     st.write("### Leaves Visualizer")
     version = 'v1'
     if st.checkbox("Difference between healthy leaf and one with mildew"):
-            avg_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
-            avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+        avg_mildew = plt.imread(
+            f"outputs/{version}/avg_var_powdery_mildew.png")
+        avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+        st.image(avg_mildew, caption='Leaf with mildew')
+        st.image(avg_healthy, caption='Healhty leaf')
+
+    if st.checkbox("Image gallery"):
+        st.write("To refresh the montage, click on the 'Create Montage' button")
+        my_data_dir = 'inputs/cherry-leaves'
+        labels = os.listdir(my_data_dir + '/validation')
+        label_to_display = st.selectbox(
+            label="Select label", options=labels, index=0)
+    if st.button("Create Montage"):
+        image_montage(dir_path=my_data_dir + '/validation',
+                      label_to_display=label_to_display,
+                      nrows=8, ncols=3, figsize=(10, 25))
 
 
+def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15, 10)):
+    sns.set_style("white")
+    labels = os.listdir(dir_path)
+
+    if label_to_display in labels:
+        images_list = os.listdir(dir_path+'/' + label_to_display)
+        if nrows * ncols < len(images_list):
+            img_idx = random.sample(images_list, nrows * ncols)
+        else:
+            print(
+                f"Decrease nrows or ncols to create your montage. \n"
+                f"There are {len(images_list)} in your subset. "
+                f"You requested a montage with {nrows * ncols} spaces")
+            return
