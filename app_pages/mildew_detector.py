@@ -3,8 +3,8 @@ from PIL import Image
 import numpy as np
 import pandas as pd
 
-from src.data_management import download_dataframe_as_csv
-from src.machine_learning.predictive_analysis import (
+from src.datamanagement import download_dataframe_as_csv
+from src.machinelearning.predictive_analysis import (
     load_model_and_predict,
     resize_input_image,
     plot_predictions_probabilities
@@ -23,7 +23,7 @@ def page_detector_body():
 
     st.write("---")
 
-    images_buffer = st.file_uploader('Upload leaf sample. You can selector more than one',
+    images_buffer = st.file_uploader('Upload leaf sample. You can select more than one',
                                      type='png', accept_multiple_files=True)
 
     if images_buffer is not None:
