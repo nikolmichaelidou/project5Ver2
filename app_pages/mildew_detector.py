@@ -4,10 +4,8 @@ import numpy as np
 import pandas as pd
 
 from src.datamanagement import download_dataframe_as_csv
-from src.machinelearning.predictive_analysis import (
-    load_model_and_predict,
-    resize_input_image,
-    plot_predictions_probabilities
+from src.machinelearning import (
+    load_test_evaluation
 )
 
 
@@ -24,7 +22,7 @@ def page_detector_body():
     st.write("---")
 
     images_buffer = st.file_uploader('Upload leaf sample. You can select more than one',
-                                     type='png', accept_multiple_files=True)
+                                     type='jpg', accept_multiple_files=True)
 
     if images_buffer is not None:
         df_report = pd.DataFrame([])
