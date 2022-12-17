@@ -7,7 +7,7 @@ This dataset contains 2104 images of cherry leaves. The photos show healthy leav
 ## Requirements
 The client is the head of IT and Innovation at Farmy & Foods, a company in the agricultural sector that produces and harvests different types of food. is requesting a dataset that:
 * Visualize the difference between a healthy leaf from a leaf that contains powdery mildew.
-* Also, that predicts if a cherry tree is healthy or has powdery mildew.
+* Also, that predicts if a cherry tree leaf is healthy or has powdery mildew.
 ### How to validate?
 In order to differentiate between a healthy leaf and a leaf with mildew can be done with a simple image study.
 
@@ -24,8 +24,11 @@ The available dataset contains 2104 images of cherry leaves
 The client is:
   * is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
   * is interested in predicting if a cherry tree is healthy or contains powdery mildew.
-### Page 2 : Leaf Visualizer
- * The user we will be able to see the average difference between a healthy leaf and a leaf with mildew
+### Page 2: Leaf Visualizer
+ * The user we will be able to see the average difference between a healthy leaf and a leaf with mildew.
+### Page 3: Mildew Detector
+  * 
+
 
 <hr>
 
@@ -38,3 +41,9 @@ The client is:
 * Error within jupyter notebooks
   * ![](/screenshots/Screenshot(131).png)
   * notebook datamodeling.ipynb does seem to be able to find the file, unlike the other notebooks.
+    * issue is fixed. the "os.chdir('/workspace/project5Ver2')" command was missing.
+
+<hr>
+
+## Credit
+  * This project was created by following a walk-through provided by Code Institute: Walk-through Project 01 Data Analysis & Machine Learning Toolkit.
