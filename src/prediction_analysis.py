@@ -43,12 +43,14 @@ def resize_input_image(img, version):
 
 def load_model_and_predict(my_image, version):
 
-    model = load_model(f"outputs/{version}/image_shape.pkl")
+    model = load_model("/workspace/project5Ver2/")
 
+    # Returns the probability that the leaf contains mildew
     pred_proba = model.predict(my_image)[0, 0]
 
-    target_map = {v: k for k, v in {'Mildew': 0, 'Healthy': 1}.items()}
+    target_map = {v: k for k, v in {'Healthy': 0, 'Mildew': 1}.items()}
     pred_class = target_map[pred_proba > 0.5]
     if pred_class == target_map[0]:
         pred_proba = 1 - pred_proba
+
     return pred_proba, pred_class
