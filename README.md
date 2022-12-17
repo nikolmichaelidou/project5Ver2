@@ -32,18 +32,5 @@ The client is:
 
 <hr>
 
-## Bugs
-* Images not appearing on page 2
-  * ![](/screenshots/Screenshot(132).png)
-
-* Gallery issue
-  * ![](/screenshots/Screenshot_20221208_011903.png)  
-* Error within jupyter notebooks
-  * ![](/screenshots/Screenshot(131).png)
-  * notebook datamodeling.ipynb does seem to be able to find the file, unlike the other notebooks.
-    * issue is fixed. the "os.chdir('/workspace/project5Ver2')" command was missing.
-
-<hr>
-
 ## Credit
   * This project was created by following a walk-through provided by Code Institute: Walk-through Project 01 Data Analysis & Machine Learning Toolkit.
