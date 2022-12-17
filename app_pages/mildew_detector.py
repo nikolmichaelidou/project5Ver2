@@ -4,9 +4,9 @@ import numpy as np
 import pandas as pd
 
 from src.datamanagement import download_dataframe_as_csv
-from src.machinelearning import (
-    load_test_evaluation
-)
+from src.machinelearning import load_test_evaluation
+from src.prediction_analysis import (
+    plot_predictions_probabilities, resize_input_image, load_model_and_predict)
 
 
 def page_detector_body():
