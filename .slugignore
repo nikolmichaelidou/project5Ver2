@@ -1,2 +1,3 @@
 *.ipynb
 /.vscode
+/kera_metadata.pb
