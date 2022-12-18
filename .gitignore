@@ -10,3 +10,4 @@ cloudinary_python.txt
 kaggle.json
 inputs/cherry-leaves/test
 inputs/cherry-leaves/train
+*.ipynb
