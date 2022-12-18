@@ -16,7 +16,7 @@ def page_detector_body():
 
     st.write(
         f"* You can download a set of healthy leaves and leaves with mildew (🤢)  for live prediction. "
-        f"You can download the images from [https://www.kaggle.com/datasets/codeinstitute/cherry-leaves]"
+        f"You can download the images from https://www.kaggle.com/datasets/codeinstitute/cherry-leaves"
     )
 
     st.write("---")
