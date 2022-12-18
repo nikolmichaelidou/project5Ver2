@@ -1,10 +1,5 @@
 # Cherry Leaf Mildew Detector Prototype
 
-## Dataset Content
-
-This dataset contains 2104 images of cherry leaves. The photos show healthy leaves and leaves with mildew.
-<hr>
-
 ## Requirements
 
 The client is the head of IT and Innovation at Farmy & Foods, a company in the agricultural sector that produces and harvests different types of food. is requesting a dataset that:
@@ -15,6 +10,9 @@ The client is the head of IT and Innovation at Farmy & Foods, a company in the a
 ### How to validate?
 
 In order to differentiate between a healthy leaf and a leaf with mildew can be done with a simple image study.
+Using a dataset from [Kaggle.com](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) the model will be able to tell the difference between a healthy leaf and a leaf containing mildew. The dataset contains over 2100 images. A subset of 4208 images from this dataset and saved it to Kaggle dataset directory for more efficient model training.
+
+* Train data - target: healthy or with mildew; features: all images
 
 ## Dashboard Design (Streamlit UI)
 
@@ -44,4 +42,4 @@ The client is:
 ## Credit
 
 * This project was created by following a walk-through provided by Code Institute: Walk-through Project 01 Data Analysis & Machine Learning Toolkit.
-* Data used for this project was retrieved from Kaggle. https://www.kaggle.com/datasets/codeinstitute/cherry-leaves
+* Data used for this project was retrieved from [Kaggle.com](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
