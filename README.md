@@ -21,7 +21,7 @@ In order to differentiate between a healthy leaf and a leaf with mildew can be d
 * We want the model to predict if the cherry leaf in a picture contais mildew or if it is healthy.
 * The ideal outcome is to speed up the process of identifying healthy leaves.
   * The accuracy is 95% or above on the test set
-* The training dataset was gathered from (Kaggle)[]. This dataset contains from [Kaggle.com](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) the model will be able to tell the difference between a healthy leaf and a leaf containing mildew. The dataset contains over 2100 images. A subset of 4208 images from this dataset and saved it to Kaggle dataset directory for more efficient model training.
+* The training dataset was gathered from (Kaggle)[]. This dataset contains from [Kaggle.com](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves), the model will be able to tell the difference between a healthy leaf and a leaf containing mildew. The dataset contains over 2100 images. A subset of 4208 images from this dataset and saved it to Kaggle dataset directory for more efficient model training.
     *  Train data - target: healthy or with mildew; features: all images
 
 
