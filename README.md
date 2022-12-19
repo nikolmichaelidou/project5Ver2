@@ -6,7 +6,7 @@ The dataset contains 4208 images of cherry leaves. Either healthy or having mild
 
 ## Requirements
 
-The client is the head of IT and Innovation at Farmy & Foods, a company in the agricultural sector that produces and harvests different types of food. is requesting a dataset that:
+The client is the head of IT and Innovation at Farmy & Foods, a company in the agricultural sector that produces and harvests different types of food. The client is requesting a dataset that:
 
 * Visualize the difference between a healthy leaf from a leaf that contains powdery mildew.
 * Also, that predicts if a cherry tree leaf is healthy or has powdery mildew.
@@ -21,7 +21,8 @@ In order to differentiate between a healthy leaf and a leaf with mildew can be d
 * We want the model to predict if the cherry leaf in a picture contais mildew or if it is healthy.
 * The ideal outcome is to speed up the process of identifying healthy leaves.
   * The accuracy is 95% or above on the test set
-* The training dataset was gathered from (Kaggle)[]. This dataset contains from [Kaggle.com](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves), the model will be able to tell the difference between a healthy leaf and a leaf containing mildew. The dataset contains over 2100 images. A subset of 4208 images from this dataset and saved it to Kaggle dataset directory for more efficient model training.
+* The training dataset was gathered from Kaggle.com . This [dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) contains over 2100 images. A subset of 4208 images from this dataset and saved it to Kaggle dataset directory for more efficient model training. 
+* The model will be able to tell the difference between a healthy leaf and a leaf containing mildew.
     *  Train data - target: healthy or with mildew; features: all images
 
 
@@ -47,6 +48,17 @@ The client is:
 ### Page 3: Mildew Detector
 
 * Here the client can upload pictures of cherry tree leaves and the Detector will detect if it is a healthy leaf or if it has mildew.
+
+<hr>
+
+## Deployment
+This project is deployed through heroku following these steps:
+
+ 1. Go to Heroku and click "New" to create a new app.
+ 2. After choosing the app name and setting the region, press "Create app".
+ 3. Go to "Deploy". Scroll down and set Deployment Method to GitHub. Once GitHub is chosen, find your repository and connect it to Heroku.
+ 4. Scroll down to Manual Deploy, make sure the "main" branch is selected and click "Deploy Branch".
+ 5. The deployed app can be found here <https://cherry-leave-mildew-prototype.herokuapp.com/>
 
 <hr>
 
