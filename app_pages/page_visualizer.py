@@ -12,6 +12,7 @@ import random
 
 def page_visualizer_body():
     st.write("### Leaves Visualizer")
+    st.write("#### Here you can click and see the cells of a healthy leaf and of a leaf with mildew. In addition, you can generate a montage of images of either type of leaf.")
     version = 'v1'
     if st.checkbox("Difference between healthy leaf and one with mildew"):
         avg_mildew = plt.imread(
