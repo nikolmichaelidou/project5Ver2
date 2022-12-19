@@ -43,7 +43,7 @@ def resize_input_image(img, version):
 
 def load_model_and_predict(my_image, version):
 
-    model = load_model("/workspace/project5Ver2/saved_model.pb")
+    model = load_model("/workspace/project5Ver2/")
 
     # Returns the probability that the leaf contains mildew
     pred_proba = model.predict(my_image)[0, 0]
