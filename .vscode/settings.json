@@ -27,5 +27,8 @@
    "[css]": {
       "editor.defaultFormatter": "HookyQR.beautify"
    },
-   "terminal.integrated.defaultLocation": "editor"
+   "terminal.integrated.defaultLocation": "editor",
+   "cSpell.words": [
+      "Farmy"
+   ]
 }

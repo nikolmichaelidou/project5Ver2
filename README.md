@@ -18,13 +18,13 @@ In order to differentiate between a healthy leaf and a leaf with mildew can be d
 <hr>
 
 ## ML Case
+
 * We want the model to predict if the cherry leaf in a picture contais mildew or if it is healthy.
 * The ideal outcome is to speed up the process of identifying healthy leaves.
   * The accuracy is 95% or above on the test set
-* The training dataset was gathered from Kaggle.com . This [dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) contains over 2100 images. A subset of 4208 images from this dataset and saved it to Kaggle dataset directory for more efficient model training. 
+* The training dataset was gathered from Kaggle.com .This [dataset](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves) contains over 2100 images. A subset of 4208 images from this dataset and saved it to Kaggle dataset directory for more efficient model training.
 * The model will be able to tell the difference between a healthy leaf and a leaf containing mildew.
-    *  Train data - target: healthy or with mildew; features: all images
-
+  * Train data - target: healthy or with mildew; features: all images
 
 ## Dashboard Design (Streamlit UI)
 
@@ -52,6 +52,7 @@ The client is:
 <hr>
 
 ## Deployment
+
 This project is deployed through heroku following these steps:
 
  1. Go to Heroku and click "New" to create a new app.
